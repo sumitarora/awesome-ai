@@ -1,0 +1,7 @@
+
+GET      /events                    controllers.EventController.getAll
+POST     /events                    controllers.EventController.create
+GET      /ip/:ip                    controllers.EventController.getIPDetails(ip: String)
+
+GET      /generate                  controllers.DataController.generate
+
