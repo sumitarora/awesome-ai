@@ -15,12 +15,13 @@ sbt run
 ```
 ## Endpoints
 
-|Type|Endpoint|Payload|Description|
-|---|---|---|---|---|
+| Type        | Endpoint           | Payload  | Description  |
+| ------------- |-------------| -----| -----|
 |GET|/events|{ "hitType": "pageview", "page": "/", "sessionId": "3616391b-63cd-4a8b-83c1-c3cca33d7757", "ip": "7.9.12.2"}|Get recent 30 events list|
 |POST|/events|--|Send an event and get the prediction|
 |GET|/ip/:ip|127.0.0.1|Get IP details of IP passed|
 |GET|/generate|--|Generate dummy data for testing|
+
 
 ## Notes
 - Prediction algorithm is generated using [Apache Spark](http://spark.apache.org/)
